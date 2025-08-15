@@ -1,0 +1,12 @@
+.rotating-text {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.text-container {
+  display: inline-block;
+}
+
+.character {
+  display: inline-block;
+}

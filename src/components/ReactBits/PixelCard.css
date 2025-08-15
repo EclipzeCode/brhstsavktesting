@@ -1,0 +1,38 @@
+.pixel-card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pixel-card--blue {
+  border-color: rgba(0, 193, 255, 0.3);
+}
+
+.pixel-card--purple {
+  border-color: rgba(132, 0, 255, 0.3);
+}
+
+.pixel-card--blue:hover {
+  background: rgba(0, 193, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.pixel-card--purple:hover {
+  background: rgba(132, 0, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.pixel-card__content h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.pixel-card__content p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}

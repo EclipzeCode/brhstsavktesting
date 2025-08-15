@@ -1,0 +1,124 @@
+.stepper-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.step-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 1rem;
+}
+
+.step-indicator-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.step-indicator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.step-indicator.active {
+  background: #8400ff;
+  color: white;
+  border-color: #8400ff;
+}
+
+.step-indicator.complete {
+  background: #00c1ff;
+  color: white;
+  border-color: #00c1ff;
+}
+
+.step-connector {
+  width: 60px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.step-connector.complete {
+  background: #00c1ff;
+}
+
+.step-content {
+  min-height: 300px;
+  margin-bottom: 2rem;
+}
+
+.step-content-wrapper {
+  text-align: center;
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.step-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.step-button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.step-back {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.step-back:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.step-next {
+  background: linear-gradient(45deg, #8400ff, #00c1ff);
+  color: white;
+  margin-left: auto;
+}
+
+.step-next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(132, 0, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .step-indicators {
+    flex-wrap: wrap;
+  }
+  
+  .step-connector {
+    width: 30px;
+  }
+  
+  .step-navigation {
+    flex-direction: column;
+  }
+}
+ 

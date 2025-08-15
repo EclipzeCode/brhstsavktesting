@@ -1,0 +1,74 @@
+.masonry-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.masonry-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.masonry-item {
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.masonry-item-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.masonry-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+  transition: filter 0.3s ease;
+}
+
+.masonry-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 1.5rem;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.masonry-item:hover .masonry-overlay {
+  transform: translateY(0);
+}
+
+.masonry-item:hover .masonry-image {
+  filter: blur(0px);
+}
+
+.masonry-overlay h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #8400ff;
+}
+
+.masonry-overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .masonry-container {
+    padding: 0 1rem;
+  }
+}

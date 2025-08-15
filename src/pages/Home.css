@@ -1,0 +1,329 @@
+.home-page {
+  padding-top: 0;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: -80px; /* Compensate for navbar spacing */
+  padding-top: 80px; /* Add padding to prevent content being hidden */
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 700;
+  font-family: 'Space Mono', 'Courier New', monospace;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.tsa-text {
+  color: white;
+  display: block;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-family: 'Space Mono', 'Courier New', monospace;
+  margin-top: 1rem;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-family: 'Space Mono', 'Courier New', monospace;
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+.rotating-highlight {
+  font-weight: 600;
+  font-family: 'Space Mono', 'Courier New', monospace;
+  padding: 0 0.5rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.cta-card {
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-family: 'Space Mono', 'Courier New', monospace;
+  font-size: 1.1rem;
+}
+
+.cta-card:hover {
+  transform: translateY(-2px);
+}
+
+.description-section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.description-text {
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  line-height: 1.6;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Space Mono', 'Courier New', monospace;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stats-section {
+  position: relative;
+  padding: 100px 0;
+  background: rgba(132, 0, 255, 0.05);
+  overflow: hidden;
+}
+
+.stats-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.stats-content {
+  position: relative;
+  z-index: 1;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  text-align: center;
+}
+
+.stat-card {
+  padding: 2rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #8400ff;
+  margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Space Mono', 'Courier New', monospace;
+  color: white;
+}
+
+.stat-card p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.features-section {
+  padding: 80px 0;
+  background: rgba(132, 0, 255, 0.02);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Space Mono', 'Courier New', monospace;
+  margin-bottom: 3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Space Mono', 'Courier New', monospace;
+  color: white;
+}
+
+.feature-card p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.dock-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.quick-facts-section {
+  padding: 100px 0;
+  background: rgba(0, 193, 255, 0.05);
+}
+
+.facts-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bento-section {
+  padding: 100px 0;
+  background: rgba(132, 0, 255, 0.05);
+}
+
+.pill-nav-section {
+  padding: 50px 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.google-classroom-section {
+  padding: 4rem 0;
+  background: rgba(34, 197, 94, 0.02);
+}
+
+.classroom-code-card {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.classroom-code-content {
+  position: relative;
+  z-index: 1;
+}
+
+.code-label {
+  margin-bottom: 1.5rem;
+}
+
+.code-label-text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Space Mono', 'Courier New', monospace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.code-display {
+  margin: 2rem 0 2.5rem;
+  padding: 1.5rem;
+  background: rgba(34, 197, 94, 0.1);
+  border: 2px solid rgba(34, 197, 94, 0.3);
+  border-radius: 15px;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.classroom-code {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  font-family: 'Space Mono', 'Courier New', monospace;
+  letter-spacing: 0.2em;
+  text-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+}
+
+.code-description {
+  margin-top: 1.5rem;
+}
+
+.code-description-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Space Mono', 'Courier New', monospace;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.classroom-code-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent, rgba(34, 197, 94, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.classroom-code-card:hover::before {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-subtitle {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .features-grid, .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .classroom-code-card {
+    padding: 2rem;
+  }
+  
+  .code-display {
+    padding: 1rem;
+  }
+  
+  .classroom-code {
+    letter-spacing: 0.1em;
+  }
+}

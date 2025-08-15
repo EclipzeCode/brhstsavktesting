@@ -1,0 +1,40 @@
+.card-swap {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.swap-card {
+  width: 250px;
+  height: 200px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.swap-card.active {
+  background: rgba(132, 0, 255, 0.2);
+  border-color: #8400ff;
+  transform: scale(1.05);
+}
+
+.swap-card h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.swap-card p {
+  color: rgba(255, 255, 255, 0.8);
+}

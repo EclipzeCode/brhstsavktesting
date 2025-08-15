@@ -1,0 +1,125 @@
+.magic-bento-grid {
+  display: grid;
+  gap: 0.5em;
+  padding: 0.75em;
+  max-width: 54em;
+  margin: 0 auto;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.magic-bento-card {
+  position: relative;
+  aspect-ratio: 4/3;
+  min-height: 200px;
+  padding: 1.25em;
+  border-radius: 20px;
+  border: 1px solid #392e4e;
+  background: #060010;
+  color: white;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.magic-bento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(132, 0, 255, 0.15);
+}
+
+.magic-bento-card.glow-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(45deg, transparent, var(--glow-color), transparent);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.magic-bento-card:hover.glow-border::before {
+  opacity: 0.5;
+}
+
+.spotlight-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    300px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(132, 0, 255, 0.1),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.magic-bento-card:hover .spotlight-overlay {
+  opacity: 1;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__label {
+  font-size: 14px;
+  color: #8400ff;
+  font-weight: 600;
+}
+
+.stars {
+  color: #8400ff;
+  font-size: 16px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 0 0.5em;
+  color: white;
+}
+
+.card__description {
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.8;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.magic-particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .magic-bento-grid {
+    grid-template-columns: 1fr;
+    padding: 0.5em;
+  }
+}

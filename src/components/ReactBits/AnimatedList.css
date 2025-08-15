@@ -1,0 +1,58 @@
+.animated-list {
+  max-height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.animated-list::-webkit-scrollbar {
+  display: none;
+}
+
+.animated-list.show-scrollbar {
+  scrollbar-width: thin;
+}
+
+.animated-list.show-scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+
+.animated-list.show-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.animated-list.show-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(132, 0, 255, 0.6);
+  border-radius: 4px;
+}
+
+.list-item-wrapper {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.list-item-wrapper:hover {
+  background: rgba(132, 0, 255, 0.1);
+  border-color: rgba(132, 0, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.list-item-wrapper.selected {
+  background: rgba(132, 0, 255, 0.2);
+  border-color: rgba(132, 0, 255, 0.5);
+}
+
+.list-item-wrapper.gradient-bg {
+  background: linear-gradient(135deg, rgba(132, 0, 255, 0.1), rgba(0, 193, 255, 0.1));
+}
+
+.animated-list-item {
+  color: white;
+  font-weight: 500;
+}

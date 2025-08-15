@@ -1,0 +1,48 @@
+{
+  "name": "bridgewater-raritan-tsa",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@react-three/drei": "^9.92.0",
+    "@react-three/fiber": "^8.15.0",
+    "@react-three/rapier": "^1.4.0",
+    "framer-motion": "^11.0.0",
+    "gl-matrix": "^3.4.3",
+    "gsap": "^3.12.2",
+    "lenis": "^1.0.42",
+    "matter-js": "^0.19.0",
+    "ogl": "^1.0.11",
+    "postprocessing": "^6.32.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-haiku": "^1.0.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "5.0.1",
+    "three": "^0.160.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

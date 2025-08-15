@@ -1,0 +1,36 @@
+.model-viewer {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.model-placeholder {
+  text-align: center;
+  color: white;
+}
+
+.model-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.model-placeholder p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #8400ff;
+}
+
+.model-placeholder small {
+  color: rgba(255, 255, 255, 0.7);
+}
