@@ -112,6 +112,8 @@
   pointer-events: none;
   z-index: 3;
   backdrop-filter: grayscale(1) brightness(0.78);
+  min-width: 100vw;
+  left:-112px;
   -webkit-backdrop-filter: grayscale(1) brightness(0.78);
   background: rgba(0, 0, 0, 0.001);
 
