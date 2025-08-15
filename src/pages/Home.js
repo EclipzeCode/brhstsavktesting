@@ -15,7 +15,9 @@ import './Home.css';
 
 const Home = () => {
   const navigate = useNavigate();
-  const rotatingTexts = ['Computer Science', 'Neuroscience', 'Finance', 'Pre-Med', 'Engineering', 'Biotechnology', 'Debate', 'Public Speaking', 'Robotics'];
+  const rotatingTexts = [
+    'Computer Science', 'Neuroscience', 'Finance', 'Pre-Med', 'Engineering', 'Biotechnology', 'Debate', 'Public Speaking', 'Robotics'
+  ];
 
 
   const quickFacts = [
@@ -241,15 +243,7 @@ const Home = () => {
       </section>
 
 
-      <div className="dock-navigation">
-        <Dock 
-          items={dockItems}
-          panelHeight={68}
-          baseItemSize={50}
-          magnification={70}
-          distance={200}
-        />
-      </div>
+      
     </div>
   );
 };
