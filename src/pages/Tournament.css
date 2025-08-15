@@ -4,14 +4,13 @@
 }
 
 .tournament-hero {
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
   background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(132, 0, 255, 0.1));
-  margin-bottom: 4rem;
 }
 
 .tournament-background {
@@ -28,26 +27,12 @@
   z-index: 1;
 }
 
-.page-title {
-  font-size: clamp(2.5rem, 8vw, 4.5rem);
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-.hero-subtitle {
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-  color: rgba(255, 255, 255, 0.8);
-  max-width: 700px;
-  margin: 0 auto 2rem;
-  line-height: 1.4;
-}
-
 .hero-badges {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  flex-wrap: wrap;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .hero-badge {
@@ -60,12 +45,11 @@
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  font-family: 'Space Mono', 'Courier New', monospace;
 }
 
 .hero-badge svg {
-  color: #FFD700;
   font-size: 1rem;
+  color: #FFD700;
 }
 
 .section-title {
@@ -73,6 +57,123 @@
   font-weight: 600;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+/* Registration Section */
+.registration-section {
+  padding: 4rem 0;
+  background: rgba(255, 215, 0, 0.02);
+}
+
+.registration-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.registration-info-card,
+.registration-form-card {
+  padding: 2.5rem;
+  border-radius: 20px;
+}
+
+.registration-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.registration-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #FFD700, #ff6b00);
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.registration-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.registration-header p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.registration-requirements {
+  margin-bottom: 2rem;
+}
+
+.registration-requirements h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.registration-requirements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.registration-requirements li {
+  padding: 0.5rem 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.registration-requirements li:before {
+  content: "✓ ";
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.registration-deadline {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 15px;
+  border-left: 4px solid #FFD700;
+}
+
+.deadline-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFD700;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: black;
+  flex-shrink: 0;
+}
+
+.registration-deadline strong {
+  color: #FFD700;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.registration-deadline p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 /* Tournament Stats */
@@ -95,7 +196,7 @@
 }
 
 .stat-number {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 900;
   color: #8400ff;
   margin-bottom: 1rem;
@@ -105,8 +206,9 @@
   gap: 0.2rem;
 }
 
-.stat-prefix, .stat-suffix {
-  font-size: 2rem;
+.stat-prefix,
+.stat-suffix {
+  font-size: 1.5rem;
   color: #00c1ff;
 }
 
@@ -131,18 +233,15 @@
 
 .prizes-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .prize-card {
-  text-align: center;
   padding: 2.5rem 2rem;
   border-radius: 20px;
+  text-align: center;
   transition: all 0.3s ease;
 }
 
@@ -156,17 +255,15 @@
 }
 
 .prize-place {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  font-family: 'Space Mono', 'Courier New', monospace;
 }
 
 .prize-amount {
   font-size: 2.5rem;
   font-weight: 900;
   color: white;
-  font-family: 'Space Mono', 'Courier New', monospace;
 }
 
 /* Event Details */
@@ -177,51 +274,49 @@
 
 .details-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
 .detail-card {
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 20px;
+  text-align: center;
 }
 
 .detail-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .detail-icon {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, rgba(0, 193, 255, 0.2), rgba(132, 0, 255, 0.2));
-  border-radius: 12px;
-  font-size: 1.5rem;
+  border-radius: 15px;
+  font-size: 1.8rem;
   color: #00c1ff;
-  flex-shrink: 0;
 }
 
 .detail-header h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: white;
   margin: 0;
 }
 
-.detail-info {
-  margin-bottom: 1rem;
-}
-
 .detail-info strong {
-  font-size: 1.2rem;
-  color: #FFD700;
-  font-family: 'Space Mono', 'Courier New', monospace;
+  font-size: 1.1rem;
+  color: #00c1ff;
+  display: block;
+  margin-bottom: 0.8rem;
 }
 
 .detail-card p {
@@ -230,7 +325,6 @@
   margin: 0;
 }
 
-/* Location Section */
 .location-section {
   padding: 4rem 0;
   background: rgba(132, 0, 255, 0.02);
@@ -238,19 +332,20 @@
 
 .location-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   margin-top: 2rem;
 }
 
-.location-info-card, .map-card {
+.location-info-card,
+.map-card {
   padding: 2.5rem;
   border-radius: 20px;
 }
 
 .location-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -261,10 +356,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(132, 0, 255, 0.2), rgba(0, 193, 255, 0.2));
+  background: linear-gradient(135deg, #8400ff, #00c1ff);
   border-radius: 12px;
   font-size: 1.5rem;
-  color: #8400ff;
+  color: white;
   flex-shrink: 0;
 }
 
@@ -272,7 +367,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: white;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .location-header p {
@@ -286,9 +381,8 @@
 
 .address-display p {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1rem;
-  margin: 0.2rem 0;
-  font-family: 'Space Mono', 'Courier New', monospace;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
 }
 
 .location-features {
@@ -304,29 +398,27 @@
   padding: 0.8rem;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .feature-item svg {
-  color: #00c1ff;
+  color: #8400ff;
   font-size: 1.1rem;
   flex-shrink: 0;
 }
 
 .feature-item span {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .map-embed {
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
 .map-footer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .directions-link {
@@ -350,10 +442,9 @@
   border-color: transparent;
 }
 
-/* Partners Section */
 .partners-section {
   padding: 4rem 0;
-  background: rgba(255, 107, 0, 0.02);
+  background: rgba(132, 0, 255, 0.02);
 }
 
 .partners-subtitle {
@@ -366,15 +457,15 @@
 
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .partner-card {
-  text-align: center;
   padding: 2rem;
-  border-radius: 20px;
+  border-radius: 15px;
+  text-align: center;
   transition: all 0.3s ease;
 }
 
@@ -386,158 +477,67 @@
   font-size: 1.1rem;
   font-weight: 600;
   color: white;
-  font-family: 'Space Mono', 'Courier New', monospace;
 }
 
-/* Registration Section */
-.registration-section {
-  padding: 4rem 0;
-  background: rgba(132, 0, 255, 0.02);
-}
-
-.registration-layout {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.registration-info-card, .registration-form-card {
-  padding: 2.5rem;
-  border-radius: 20px;
-}
-
-.registration-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-
-.registration-icon {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(132, 0, 255, 0.2));
-  border-radius: 12px;
-  font-size: 1.5rem;
-  color: #FFD700;
-  flex-shrink: 0;
-}
-
-.registration-header h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 0.5rem;
-}
-
-.registration-header p {
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0;
-}
-
-.registration-requirements {
-  margin-bottom: 2rem;
-}
-
-.registration-requirements h4 {
-  color: #FFD700;
-  margin-bottom: 1rem;
-  font-family: 'Space Mono', 'Courier New', monospace;
-}
-
-.registration-requirements ul {
-  list-style: none;
-  padding: 0;
-}
-
-.registration-requirements li {
-  padding: 0.5rem 0;
-  color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.registration-requirements li:before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #00c1ff;
-  font-weight: bold;
-}
-
-.registration-requirements li:last-child {
-  border-bottom: none;
-}
-
-.registration-deadline {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 1.5rem;
-  background: rgba(255, 215, 0, 0.1);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 215, 0, 0.2);
-}
-
-.deadline-icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 215, 0, 0.2);
-  border-radius: 10px;
-  font-size: 1.2rem;
-  color: #FFD700;
-  flex-shrink: 0;
-}
-
-.registration-deadline strong {
-  color: #FFD700;
-  font-family: 'Space Mono', 'Courier New', monospace;
-}
-
-.registration-deadline p {
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0.5rem 0 0;
-}
-
-.form-placeholder {
-  text-align: center;
-  padding: 3rem 2rem;
-  border: 2px dashed rgba(255, 255, 255, 0.3);
+/* Typeform Embed */
+.typeform-container {
+  width: 100%;
+  min-height: 500px;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.02);
+  overflow: hidden;
 }
 
-.form-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, rgba(132, 0, 255, 0.2), rgba(0, 193, 255, 0.2));
+.typeform-container div[data-tf-live] {
+  width: 100%;
+  height: 500px;
+  border: none;
   border-radius: 15px;
-  font-size: 1.8rem;
-  color: #8400ff;
 }
 
-.form-placeholder h3 {
-  color: white;
-  margin-bottom: 1rem;
-  font-family: 'Space Mono', 'Courier New', monospace;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .registration-layout,
+  .location-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-badges {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .details-grid,
+  .prizes-grid,
+  .stats-grid,
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .registration-header,
+  .location-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 
-.form-placeholder p {
-  color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 1.5rem;
+@media (max-width: 480px) {
+  .registration-info-card,
+  .registration-form-card,
+  .location-info-card,
+  .map-card {
+    padding: 1.5rem;
+  }
+  
+  .typeform-embed {
+    min-height: 400px;
+  }
+  
+  .typeform-embed div[data-tf-live] {
+    height: 400px;
+  }
 }
+
 
 .form-instructions ul {
   list-style: none;
@@ -560,6 +560,21 @@
   position: absolute;
   left: 0;
   color: #8400ff;
+}
+
+/* Typeform Embed */
+.typeform-container {
+  width: 100%;
+  min-height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.typeform-container div[data-tf-live] {
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 15px;
 }
 
 /* Responsive Design */

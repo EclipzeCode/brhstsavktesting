@@ -1,14 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SpotlightCard from '../components/ReactBits/SpotlightCard';
 import GradientText from '../components/ReactBits/GradientText';
 import BlurText from '../components/ReactBits/BlurText';
 import CountUp from '../components/ReactBits/CountUp';
 import Particles from '../components/ReactBits/Particles';
 import DarkVeil from '../components/ReactBits/DarkVeil';
-import { FiExternalLink, FiMapPin, FiCalendar, FiUsers, FiTarget, FiTrendingUp, FiCode, FiGlobe, FiHeart, FiBook, FiZap, FiStar, FiCheckCircle, FiClock, FiFileText, FiDollarSign, FiTruck } from 'react-icons/fi';
+import { FiExternalLink, FiMapPin, FiCalendar, FiUsers, FiFileText, FiDollarSign, FiTruck, FiClock } from 'react-icons/fi';
 import './Tournament.css';
 
 const Tournament = () => {
+  useEffect(() => {
+    // Load Typeform embed script
+    const script = document.createElement('script');
+    script.src = '//embed.typeform.com/next/embed.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Clean up script when component unmounts
+      document.head.removeChild(script);
+    };
+  }, []);
+
   const prizeBreakdown = [
     { place: '1st', amount: 500, color: '#FFD700', icon: '🥇' },
     { place: '2nd', amount: 250, color: '#C0C0C0', icon: '🥈' },
@@ -21,16 +34,6 @@ const Tournament = () => {
     { number: 10, label: "Registration Fee", description: "Per person entry", prefix: "$" },
     { number: 500, label: "First Place Prize", description: "Winner takes it all", prefix: "$" },
     { number: 100, label: "Percentage NJ Schools", description: "All schools welcome", suffix: "%" }
-  ];
-
-  const partners = [
-    "Coders Over Borders",
-    "BRHS DECA", 
-    "BRHS FBLA",
-    "BRHS Philosophy Club",
-    "BR Engineering",
-    "BR Christian Club",
-    "Faith Fusion Club"
   ];
 
   const eventDetails = [
@@ -153,21 +156,8 @@ const Tournament = () => {
             </SpotlightCard>
 
             <SpotlightCard className="registration-form-card" spotlightColor="rgba(132, 0, 255, 0.2)">
-              <div className="form-placeholder">
-                <div className="form-icon">
-                  <FiFileText />
-                </div>
-                <h3>Registration Form</h3>
-                <p>Embedded registration form will be placed here</p>
-                <div className="form-instructions">
-                  <p>The registration form will include:</p>
-                  <ul>
-                    <li>Team name and school</li>
-                    <li>Team member information</li>
-                    <li>Contact details</li>
-                    <li>Payment processing</li>
-                  </ul>
-                </div>
+              <div className="typeform-container">
+                <div data-tf-live="01K2QPRD1FJZG63BK7PQBDWMKR"></div>
               </div>
             </SpotlightCard>
           </div>
@@ -196,74 +186,6 @@ const Tournament = () => {
                 <p>{detail.description}</p>
               </SpotlightCard>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="location-section">
-        <div className="container">
-          <h2 className="section-title">
-            <GradientText colors={["#8400ff", "#00c1ff"]}>
-              Tournament Location and Information
-            </GradientText>
-          </h2>
-          
-          <div className="location-layout">
-            <SpotlightCard className="location-info-card" spotlightColor="rgba(132, 0, 255, 0.2)">
-              <div className="location-header">
-                <div className="location-icon">
-                  <FiMapPin />
-                </div>
-                <div>
-                  <h3>Bridgewater-Raritan High School</h3>
-                  <p>Large Gymnasium</p>
-                </div>
-              </div>
-              <div className="address-display">
-                <p>600 Garretson Road</p>
-                <p>Bridgewater, NJ 08807</p>
-              </div>
-              <div className="location-features">
-                <div className="feature-item">
-                  <FiUsers />
-                  <span>Large Competition Space</span>
-                </div>
-                <div className="feature-item">
-                  <FiTruck />
-                  <span>Food Trucks On-Site</span>
-                </div>
-                <div className="feature-item">
-                  <FiMapPin />
-                  <span>Easy Access & Parking</span>
-                </div>
-              </div>
-            </SpotlightCard>
-
-            <SpotlightCard className="map-card" spotlightColor="rgba(0, 193, 255, 0.2)">
-              <div className="map-embed">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.5234567!2d-74.6352778!3d40.5891667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c39a4c5e8f4b45%3A0x5e8f4b45c39a4c5e!2s600%20Garretson%20Rd%2C%20Bridgewater%2C%20NJ%2008807!5e0!3m2!1sen!2sus!4v1640995200000!5m2!1sen!2sus"
-                  width="100%"
-                  height="300"
-                  style={{ border: 0, borderRadius: '10px' }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Tournament Location Map"
-                ></iframe>
-              </div>
-              <div className="map-footer">
-                <a 
-                  href="https://maps.google.com/?q=600+Garretson+Rd,+Bridgewater,+NJ+08807"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="directions-link"
-                >
-                  <FiExternalLink />
-                  <span>Get Directions</span>
-                </a>
-              </div>
-            </SpotlightCard>
           </div>
         </div>
       </section>
@@ -325,28 +247,6 @@ const Tournament = () => {
                 </div>
                 <h3>{stat.label}</h3>
                 <p>{stat.description}</p>
-              </SpotlightCard>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="partners-section">
-        <div className="container">
-          <h2 className="section-title">
-            <GradientText colors={["#8400ff", "#00c1ff"]}>
-              Event Partners
-            </GradientText>
-          </h2>
-          <BlurText
-            text="This tournament is made possible through collaboration with amazing organizations"
-            className="partners-subtitle"
-            animateBy="words"
-          />
-          <div className="partners-grid">
-            {partners.map((partner, index) => (
-              <SpotlightCard key={index} className="partner-card" spotlightColor="rgba(255, 107, 0, 0.15)">
-                <div className="partner-name">{partner}</div>
               </SpotlightCard>
             ))}
           </div>
