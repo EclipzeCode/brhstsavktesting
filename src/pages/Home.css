@@ -130,7 +130,8 @@
 }
 
 .stat-card {
-  padding: 2rem;
+  padding: 1rem;
+  margin: 2rem;
 }
 
 .stat-number {
