@@ -42,7 +42,7 @@ const Team = () => {
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
       title: "Mohnish Gumedelli",
       subtitle: "Vice President",
-      handle: "10th Grade",
+      handle: "Sophomore",
       borderColor: "#10B981",
       gradient: "linear-gradient(210deg, #10B981, #000)",
     },
