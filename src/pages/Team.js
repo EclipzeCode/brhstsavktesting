@@ -47,7 +47,7 @@ const Team = () => {
       gradient: "linear-gradient(210deg, #10B981, #000)",
     },
     {
-      image: process.env.219222PUBLIC_URL + "/assets/team/priyanka.png",
+      image: process.env.PUBLIC_URL + "/assets/team/priyanka.png",
       title: "Priyanka Kumar",
       subtitle: "Treasurer",
       handle: "Junior",
