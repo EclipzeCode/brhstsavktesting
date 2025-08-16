@@ -5,6 +5,7 @@ import BlurText from '../components/ReactBits/BlurText';
 import CountUp from '../components/ReactBits/CountUp';
 import Particles from '../components/ReactBits/Particles';
 import DarkVeil from '../components/ReactBits/DarkVeil';
+import CircularGallery from '../components/ReactBits/CircularGallery';
 import { FiExternalLink, FiMapPin, FiCalendar, FiUsers, FiFileText, FiDollarSign, FiTruck, FiClock } from 'react-icons/fi';
 import './Tournament.css';
 
