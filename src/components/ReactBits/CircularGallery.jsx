@@ -11,7 +11,7 @@ import img7 from "../../assets/tournament/31-LBJ06872.jpg";
 import img8 from "../../assets/tournament/4-LBJ06808.jpg";
 import img9 from "../../assets/tournament/2-LBJ06802.jpg";
 import img10 from "../../assets/tournament/BB3v3Comp16.jpg";
-import img11 from "../../assets/tournament/BB3v3Comp59.jpg";
+// import img11 from "../../assets/tournament/BB3v3Comp59.jpg";
 import img12 from "../../assets/tournament/BB3v3Comp40.jpg";
 
 
@@ -359,7 +359,7 @@ class App {
       { image: img8, text: "3 on 3" }, // benny layup
       { image: img9, text: "Crowd is watching" }, // crowd
       { image: img10, text: "Got what it takes?" }, // ishan verma staring at ball
-      { image: img11, text: "Money on the line" }, // Jon Vijay lay up
+      // { image: img11, text: "Money on the line" }, // Jon Vijay lay up
       { image: img12, text: "Sign up now" }, // paarth dribbling
     ];
 
