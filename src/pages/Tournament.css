@@ -495,49 +495,244 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .registration-layout,
-  .location-layout {
+@media (max-width: 1024px) {
+  .registration-layout, .location-layout {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .details-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  
+  .prizes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .tournament-hero {
+    min-height: 70vh;
+    padding: 40px 0;
   }
   
   .hero-badges {
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
   }
   
-  .details-grid,
-  .prizes-grid,
-  .stats-grid,
-  .partners-grid {
-    grid-template-columns: 1fr;
+  .hero-badge {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
   }
   
-  .registration-header,
-  .location-header {
+  .section-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+  
+  .registration-info-card, .registration-form-card,
+  .location-info-card, .map-card {
+    padding: 2rem;
+  }
+  
+  .registration-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
-}
-
-@media (max-width: 480px) {
-  .registration-info-card,
-  .registration-form-card,
-  .location-info-card,
-  .map-card {
-    padding: 1.5rem;
+  
+  .registration-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
   
-  .typeform-embed {
+  .typeform-container {
     min-height: 400px;
   }
   
-  .typeform-embed div[data-tf-live] {
+  .typeform-container div[data-tf-live] {
     height: 400px;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .detail-card {
+    padding: 1.5rem;
+  }
+  
+  .detail-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .detail-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .prizes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .prize-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .prize-icon {
+    font-size: 2.5rem;
+  }
+  
+  .prize-amount {
+    font-size: 2rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .tournament-stat-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .partner-card {
+    padding: 1.5rem;
+  }
+  
+  .partner-name {
+    font-size: 1rem;
   }
 }
 
+@media (max-width: 480px) {
+  .tournament-hero {
+    min-height: 60vh;
+    padding: 30px 0;
+  }
+  
+  .tournament-content {
+    padding: 0 1rem;
+  }
+  
+  .hero-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+  
+  .registration-info-card, .registration-form-card,
+  .location-info-card, .map-card {
+    padding: 1.5rem;
+  }
+  
+  .registration-requirements h4 {
+    font-size: 1rem;
+  }
+  
+  .registration-requirements li {
+    font-size: 0.8rem;
+  }
+  
+  .registration-deadline {
+    padding: 1rem;
+  }
+  
+  .deadline-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .typeform-container {
+    min-height: 350px;
+  }
+  
+  .typeform-container div[data-tf-live] {
+    height: 350px;
+  }
+  
+  .detail-card {
+    padding: 1rem;
+  }
+  
+  .detail-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .prizes-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .prize-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .prize-icon {
+    font-size: 2rem;
+  }
+  
+  .prize-place {
+    font-size: 1rem;
+  }
+  
+  .prize-amount {
+    font-size: 1.8rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .tournament-stat-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .tournament-stat-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .tournament-stat-card p {
+    font-size: 0.85rem;
+  }
+  
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .partner-card {
+    padding: 1rem;
+  }
+  
+  .partner-name {
+    font-size: 0.9rem;
+  }
+}
 
 .form-instructions ul {
   list-style: none;
@@ -578,47 +773,241 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .stats-grid,
-  .prizes-grid,
-  .details-grid,
-  .location-layout,
-  .partners-grid,
-  .registration-layout {
+@media (max-width: 1024px) {
+  .registration-layout, .location-layout {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .details-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  
+  .prizes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .tournament-hero {
+    min-height: 70vh;
+    padding: 40px 0;
   }
   
   .hero-badges {
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
   }
   
-  .location-header,
+  .hero-badge {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+  
+  .section-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+  
+  .registration-info-card, .registration-form-card,
+  .location-info-card, .map-card {
+    padding: 2rem;
+  }
+  
   .registration-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
   
-  .registration-deadline {
-    flex-direction: column;
-    text-align: center;
+  .registration-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .typeform-container {
+    min-height: 400px;
+  }
+  
+  .typeform-container div[data-tf-live] {
+    height: 400px;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .detail-card {
+    padding: 1.5rem;
+  }
+  
+  .detail-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .detail-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .prizes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .prize-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .prize-icon {
+    font-size: 2.5rem;
+  }
+  
+  .prize-amount {
+    font-size: 2rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .tournament-stat-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .partners-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  
+  .partner-card {
+    padding: 1.5rem;
+  }
+  
+  .partner-name {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .tournament-stat-card,
-  .prize-card,
-  .detail-card,
-  .location-info-card,
-  .map-card,
-  .partner-card,
-  .registration-info-card,
-  .registration-form-card {
+  .tournament-hero {
+    min-height: 60vh;
+    padding: 30px 0;
+  }
+  
+  .tournament-content {
+    padding: 0 1rem;
+  }
+  
+  .hero-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+  
+  .registration-info-card, .registration-form-card,
+  .location-info-card, .map-card {
     padding: 1.5rem;
   }
   
-  .form-placeholder {
-    padding: 2rem 1rem;
+  .registration-requirements h4 {
+    font-size: 1rem;
+  }
+  
+  .registration-requirements li {
+    font-size: 0.8rem;
+  }
+  
+  .registration-deadline {
+    padding: 1rem;
+  }
+  
+  .deadline-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  
+  .typeform-container {
+    min-height: 350px;
+  }
+  
+  .typeform-container div[data-tf-live] {
+    height: 350px;
+  }
+  
+  .detail-card {
+    padding: 1rem;
+  }
+  
+  .detail-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .prizes-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .prize-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .prize-icon {
+    font-size: 2rem;
+  }
+  
+  .prize-place {
+    font-size: 1rem;
+  }
+  
+  .prize-amount {
+    font-size: 1.8rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .tournament-stat-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .tournament-stat-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .tournament-stat-card p {
+    font-size: 0.85rem;
+  }
+  
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .partner-card {
+    padding: 1rem;
+  }
+  
+  .partner-name {
+    font-size: 0.9rem;
   }
 }

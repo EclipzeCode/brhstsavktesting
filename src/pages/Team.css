@@ -315,28 +315,153 @@
   font-family: 'Space Mono', 'Courier New', monospace;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Enhanced Mobile Responsive Design */
+@media (max-width: 1024px) {
   .officers-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    min-height: 500px;
+  }
+  
+  .positions-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
   
   .join-benefits {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .team-header {
+    min-height: 50vh;
+    padding: 40px 0;
   }
   
-  .join-cta {
-    flex-direction: column;
-    align-items: center;
+  .officers-section, .open-positions-section, .join-section {
+    padding: 60px 0;
+  }
+  
+  .officers-intro h2 {
+    font-size: 2rem;
+  }
+  
+  .officers-intro p {
+    font-size: 1rem;
+  }
+  
+  .officers-grid {
+    min-height: 400px;
+    margin-top: 2rem;
   }
   
   .positions-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
   
   .position-card {
     padding: 1.5rem;
+  }
+  
+  .position-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .position-description {
+    font-size: 0.9rem;
+  }
+  
+  .position-requirements li {
+    font-size: 0.8rem;
+  }
+  
+  .join-benefits {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .benefit {
+    padding: 1.5rem;
+  }
+  
+  .benefit h3 {
+    font-size: 1.1rem;
+  }
+  
+  .benefit p {
+    font-size: 0.9rem;
+  }
+  
+  .stats-section {
+    padding: 60px 0;
+  }
+  
+  .team-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .stat-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-header {
+    min-height: 40vh;
+    padding: 30px 0;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+  
+  .page-subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .officers-section, .open-positions-section, .join-section {
+    padding: 40px 0;
+  }
+  
+  .officers-intro, .positions-intro, .join-info {
+    padding: 1.5rem;
+  }
+  
+  .officers-intro h2 {
+    font-size: 1.5rem;
+  }
+  
+  .officers-grid {
+    min-height: 300px;
+  }
+  
+  .position-card {
+    padding: 1rem;
+  }
+  
+  .application-notice {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .notice-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .notice-content p {
+    font-size: 0.9rem;
+  }
+  
+  .benefit {
+    padding: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
   }
 }
 

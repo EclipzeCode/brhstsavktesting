@@ -74,12 +74,19 @@ html, body {
   box-shadow: 0 5px 15px rgba(132, 0, 255, 0.3);
 }
 
+/* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
   .main-content {
-    padding-top: 70px;
+    padding-top: 60px;
   }
   
   .container {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
   }
 }
