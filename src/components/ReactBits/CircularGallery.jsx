@@ -1,19 +1,18 @@
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from "ogl";
 import { useEffect, useRef } from "react";
 //pls work
-import img1 from "../../assets/tournament/100-LBJ07066.jpg";
-import img2 from "../../assets/tournament/128-LBJ07146.jpg";
-import img3 from "../../assets/tournament/123-LBJ07135.jpg";
-import img4 from "../../assets/tournament/124-LBJ07139.jpg";
-import img5 from "../../assets/tournament/133-LBJ07159.jpg";
-import img6 from "../../assets/tournament/30-LBJ06866.jpg";
-import img7 from "../../assets/tournament/31-LBJ06872.jpg";
-import img8 from "../../assets/tournament/4-LBJ06808.jpg";
-import img9 from "../../assets/tournament/2-LBJ06802.jpg";
-import img10 from "../../assets/tournament/BB3v3Comp16.jpg";
-// import img11 from "../../assets/tournament/BB3v3Comp59.jpg";
-import img12 from "../../assets/tournament/BB3v3Comp40.jpg";
-
+import img1 from "../../assets/tournament/50-LBJ06904.jpg"; // daksh shot vs dkr navneet
+import img2 from "../../assets/tournament/128-LBJ07146.jpg"; // someone layup
+import img3 from "../../assets/tournament/80-LBJ06986.jpg"; // kush shot
+import img4 from "../../assets/tournament/45-LBJ06894.jpg"; // tyler dunk
+import img5 from "../../assets/tournament/133-LBJ07159.jpg"; // kelvin money spread
+import img6 from "../../assets/tournament/30-LBJ06866.jpg"; // manas intercept
+import img7 from "../../assets/tournament/70-LBJ06943.jpg"; // kelvin vs tyler
+import img8 from "../../assets/tournament/52-LBJ06909.jpg"; // chayan vs navneet
+import img9 from "../../assets/tournament/2-LBJ06802.jpg"; // crowd
+import img10 from "../../assets/tournament/92-LBJ07033.jpg"; // shantan dribbling
+import img11 from "../../assets/tournament/9-LBJ06813.jpg"; // score board table
+import img12 from "../../assets/tournament/87-LBJ07017.jpg"; // poster guy shooting
 
 import "./CircularGallery.css";
 
@@ -351,30 +350,17 @@ class App {
     const defaultItems = [
       { image: img1, text: "Shoot it" }, // jadon with balltime
       { image: img2, text: "Put it up" }, // someone layup
-      { image: img3, text: "Shot" }, // daksh shot
-      { image: img4, text: "Emote on em" }, // manas freaky
+      { image: img3, text: "Swish it" }, // kush shot
+      { image: img4, text: "Dunk it" }, // tyler dunk
       { image: img5, text: "Win it ALL" }, // kelvin money spread
       { image: img6, text: "Steal it" }, // manas intercept
-      { image: img7, text: "High stakes" }, // kelvin vs josh
-      { image: img8, text: "3 on 3" }, // benny layup
+      { image: img7, text: "High stakes" }, // kelvin vs tyler
+      { image: img8, text: "3 on 3" }, // chayan vs navneet
       { image: img9, text: "Crowd is watching" }, // crowd
-      { image: img10, text: "Got what it takes?" }, // ishan verma staring at ball
-      // { image: img11, text: "Money on the line" }, // Jon Vijay lay up
-      { image: img12, text: "Sign up now" }, // paarth dribbling
+      { image: img10, text: "Got what it takes?" }, // shantan dribbling
+      { image: img11, text: "Money on the line" }, // score board table 
+      { image: img12, text: "Sign up now" }, // poster guy shooting 
     ];
-
-// import img1 from "../assets/tournament/100-LBJ07066.jpg";
-// import img2 from "../assets/tournament/128-LBJ07146.jpg";
-// import img3 from "../assets/tournament/123-LBJ07135.jpg";
-// import img4 from "../assets/tournament/124-LBJ07139.jpg";
-// import img5 from "../assets/tournament/133-LBJ07159.jpg";
-// import img6 from "../assets/tournament/30-LBJ06866.jpg";
-// import img7 from "../assets/tournament/31-LBJ06872.jpg";
-// import img8 from "../assets/tournament/4-LBJ06808.jpg";
-// import img9 from "../assets/tournament/2-LBJ06802.jpg";
-// import img10 from "../assets/tournament/BB 3v3 Comp-16.jpg";
-// import img11 from "../assets/tournament/BB 3v3 Comp-59.jpg";
-// import img12 from "../assets/tournament/BB 3v3 Comp-40.jpg";
     
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
