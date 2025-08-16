@@ -114,6 +114,29 @@ const Tournament = () => {
         </div>
       </section>
 
+      <section className="gallery-section">
+        <div className="container">
+          <h2 className="section-title">
+            <GradientText colors={["#FFD700", "#00c1ff"]}>
+              Tournament Gallery
+            </GradientText>
+          </h2>
+      
+          <CircularGallery
+            images={[
+              "/images/tourney1.jpg",
+              "/images/tourney2.jpg",
+              "/images/tourney3.jpg",
+              "/images/tourney4.jpg",
+              "/images/tourney5.jpg",
+            ]}
+            radius={250}   // how spread out the circle is
+            autoRotate={true}
+            autoRotateSpeed={0.6}
+          />
+        </div>
+      </section>
+
       <section className="registration-section">
         <div className="container">
           <h2 className="section-title">
