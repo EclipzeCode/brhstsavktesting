@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import PillNav from './components/ReactBits/PillNav';
 import Home from './pages/Home';
 import Team from './pages/Team';
@@ -24,6 +25,7 @@ function App() {
             <Route path="/tournament" element={<Tournament />} />
           </Routes>
         </main>
+        <Analytics />
       </div>
     </Router>
   );
