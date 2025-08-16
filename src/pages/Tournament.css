@@ -606,6 +606,18 @@
   }
 }
 
+.gallery-section {
+  padding: 4rem 0;
+  background: rgba(0, 193, 255, 0.02);
+  text-align: center;
+}
+
+.circular-gallery {
+  margin: 2rem auto;
+  max-width: 600px;
+  height: 400px;
+}
+
 @media (max-width: 480px) {
   .tournament-stat-card,
   .prize-card,
