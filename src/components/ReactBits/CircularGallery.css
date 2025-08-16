@@ -1,45 +1,10 @@
 .circular-gallery {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.circular-gallery-track {
-  position: relative;
   width: 100%;
   height: 100%;
-}
-
-.circular-gallery-item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
   overflow: hidden;
-  border: 3px solid #8400ff;
-  transform-origin: center;
-  cursor: pointer;
-  text-align: center;
+  cursor: grab;
 }
 
-.circular-gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.circular-gallery-item h4 {
-  position: absolute;
-  bottom: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 0.8rem;
-  white-space: nowrap;
+.circular-gallery:active {
+  cursor: grabbing;
 }
