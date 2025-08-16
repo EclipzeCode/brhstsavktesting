@@ -39,7 +39,7 @@ const Team = () => {
       gradient: "linear-gradient(165deg, #ff6b00, #000)",
     },
     {
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
+      image: process.env.PUBLIC_URL + "/assets/team/mohnish.png",
       title: "Mohnish Gumedelli",
       subtitle: "Vice President",
       handle: "Sophomore",
@@ -55,7 +55,7 @@ const Team = () => {
       gradient: "linear-gradient(195deg, #EF4444, #000)",
     },
     {
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=400&auto=format&fit=crop",
+      image: process.env.PUBLIC_URL + "/assets/team/anaya.png",
       title: "Anaya Tejani",
       subtitle: "Secretary",
       handle: "Junior",
