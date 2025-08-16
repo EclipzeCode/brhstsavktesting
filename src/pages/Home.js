@@ -19,14 +19,6 @@ const Home = () => {
     'Computer Science', 'Neuroscience', 'Finance', 'Pre-Med', 'Engineering', 'Biotechnology', 'Debate', 'Public Speaking', 'Robotics'
   ];
 
-  const dockItems = [
-    { icon: 'HOME', label: 'Home', onClick: () => navigate('/') },
-    { icon: 'TEAM', label: 'Team', onClick: () => navigate('/team') },
-    { icon: 'DOCS', label: 'Resources', onClick: () => navigate('/resources') },
-    { icon: 'INFO', label: 'About', onClick: () => navigate('/about') },
-    { icon: 'MEET', label: 'Meetings', onClick: () => navigate('/meetings') },
-  ];
-
   const quickFacts = [
     'Over 300,000 members nationwide',
     '40 Competition Events',
@@ -249,16 +241,6 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="dock-navigation">
-        <Dock 
-          items={dockItems}
-          panelHeight={68}
-          baseItemSize={50}
-          magnification={70}
-          distance={200}
-        />
-      </div>
-      
     </div>
   );
 };
