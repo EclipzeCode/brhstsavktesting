@@ -71,7 +71,7 @@ const Team = () => {
       gradient: "linear-gradient(135deg, #F59E0B, #000)",
     },
     {
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=400&auto=format&fit=crop",
+      image: process.env.PUBLIC_URL + "/assets/team/jadon.png",
       title: "Jadon Kim",
       subtitle: "Fundraising",
       handle: "Junior",
