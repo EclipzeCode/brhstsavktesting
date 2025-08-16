@@ -5,6 +5,7 @@ import BlurText from '../components/ReactBits/BlurText';
 import CountUp from '../components/ReactBits/CountUp';
 import Particles from '../components/ReactBits/Particles';
 import DarkVeil from '../components/ReactBits/DarkVeil';
+import CircularGallery from '../components/ReactBits/CircularGallery';
 import { FiExternalLink, FiMapPin, FiCalendar, FiUsers, FiFileText, FiDollarSign, FiTruck, FiClock } from 'react-icons/fi';
 import './Tournament.css';
 
@@ -110,6 +111,32 @@ const Tournament = () => {
               <span>$900+ in Prizes</span>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="gallery-section">
+        <div className="container">
+          <h2 className="section-title">
+            <GradientText colors={["#FFD700", "#00c1ff"]}>
+              Tournament Gallery
+            </GradientText>
+          </h2>
+      
+          <CircularGallery
+            images={[
+              "/src/assets/tournament/100-LBJ07066.jpg", // jadon with balltime
+              "/src/assets/tournament/128-LBJ07146.jpg", // someone layup
+              "/src/assets/tournament/123-LBJ07135.jpg", // daksh shot
+              "/src/assets/tournament/124-LBJ07139.jpg", // manas freaky
+              "/src/assets/tournament/133-LBJ07159.jpg", // kelvin money spread
+              "/src/assets/tournament/30-LBJ06866.jpg", // manas intercept
+              "/src/assets/tournament/31-LBJ06872.jpg", // kelvin vs josh
+              "/src/assets/tournament/4-LBJ06808.jpg" // benny layup
+            ]}
+            radius={250}
+            autoRotate={true}
+            autoRotateSpeed={0.6}
+          />
         </div>
       </section>
 
