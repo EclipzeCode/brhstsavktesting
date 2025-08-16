@@ -10,9 +10,9 @@ import img6 from "../../assets/tournament/30-LBJ06866.jpg";
 import img7 from "../../assets/tournament/31-LBJ06872.jpg";
 import img8 from "../../assets/tournament/4-LBJ06808.jpg";
 import img9 from "../../assets/tournament/2-LBJ06802.jpg";
-import img10 from "../../assets/tournament/BB-3v3-Comp-16.jpg"; // rename file to remove spaces!
-import img11 from "../../assets/tournament/BB-3v3-Comp-59.jpg";
-import img12 from "../../assets/tournament/BB-3v3-Comp-40.jpg";
+// import img10 from "../../assets/tournament/BB-3v3-Comp-16.jpg"; // rename file to remove spaces!
+// import img11 from "../../assets/tournament/BB-3v3-Comp-59.jpg";
+// import img12 from "../../assets/tournament/BB-3v3-Comp-40.jpg";
 
 
 import "./CircularGallery.css";
@@ -358,9 +358,9 @@ class App {
       { image: img7, text: "High stakes" }, // kelvin vs josh
       { image: img8, text: "3 on 3" }, // benny layup
       { image: img9, text: "Crowd is watching" }, // crowd
-      { image: img10, text: "Got what it takes?" }, // ishan verma staring at ball
-      { image: img11, text: "Money on the line" }, // Jon Vijay lay up
-      { image: img12, text: "Sign up now" }, // paarth dribbling
+      // { image: img10, text: "Got what it takes?" }, // ishan verma staring at ball
+      // { image: img11, text: "Money on the line" }, // Jon Vijay lay up
+      // { image: img12, text: "Sign up now" }, // paarth dribbling
     ];
 
 // import img1 from "../assets/tournament/100-LBJ07066.jpg";
