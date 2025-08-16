@@ -108,12 +108,14 @@
 
 .chroma-overlay {
   position: absolute;
-  inset: 0;
   pointer-events: none;
   z-index: 3;
   backdrop-filter: grayscale(1) brightness(0.78);
-  min-width: 100vw;
-  left:-112px;
+  min-width: 150vw;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left:-8rem;
   -webkit-backdrop-filter: grayscale(1) brightness(0.78);
   background: rgba(0, 0, 0, 0.001);
 
