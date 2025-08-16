@@ -115,28 +115,8 @@ const Tournament = () => {
       </section>
 
       <section className="gallery-section">
-        <div className="container">
-          <h2 className="section-title">
-            <GradientText colors={["#FFD700", "#00c1ff"]}>
-              Tournament Gallery
-            </GradientText>
-          </h2>
-      
-          <CircularGallery
-            images={[
-              "/src/assets/tournament/100-LBJ07066.jpg", // jadon with balltime
-              "/src/assets/tournament/128-LBJ07146.jpg", // someone layup
-              "/src/assets/tournament/123-LBJ07135.jpg", // daksh shot
-              "/src/assets/tournament/124-LBJ07139.jpg", // manas freaky
-              "/src/assets/tournament/133-LBJ07159.jpg", // kelvin money spread
-              "/src/assets/tournament/30-LBJ06866.jpg", // manas intercept
-              "/src/assets/tournament/31-LBJ06872.jpg", // kelvin vs josh
-              "/src/assets/tournament/4-LBJ06808.jpg" // benny layup
-            ]}
-            radius={250}
-            autoRotate={true}
-            autoRotateSpeed={0.6}
-          />
+        <div style={{ height: '600px', position: 'relative' }}>
+          <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}/>
         </div>
       </section>
 
