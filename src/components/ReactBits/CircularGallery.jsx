@@ -10,7 +10,7 @@ import img6 from "../../assets/tournament/30-LBJ06866.jpg";
 import img7 from "../../assets/tournament/31-LBJ06872.jpg";
 import img8 from "../../assets/tournament/4-LBJ06808.jpg";
 import img9 from "../../assets/tournament/2-LBJ06802.jpg";
-import img10 from "../../assets/tournament/BB3v3Comp16.jp";
+import img10 from "../../assets/tournament/BB3v3Comp16.jpg";
 import img11 from "../../assets/tournament/BB3v3Comp59.jpg";
 import img12 from "../../assets/tournament/BB3v3Comp40.jpg";
 
