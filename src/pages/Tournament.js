@@ -108,7 +108,7 @@ const Tournament = () => {
             </div>
             <div className="hero-badge">
               <FiDollarSign />
-              <span>$900+ in Prizes</span>
+              <span>900+ in Prizes</span>
             </div>
           </div>
         </div>
