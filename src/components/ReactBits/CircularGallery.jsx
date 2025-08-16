@@ -1,5 +1,17 @@
 import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from "ogl";
 import { useEffect, useRef } from "react";
+import img1 from "../assets/tournament/100-LBJ07066.jpg";
+import img2 from "../assets/tournament/128-LBJ07146.jpg";
+import img3 from "../assets/tournament/123-LBJ07135.jpg";
+import img4 from "../assets/tournament/124-LBJ07139.jpg";
+import img5 from "../assets/tournament/133-LBJ07159.jpg";
+import img6 from "../assets/tournament/30-LBJ06866.jpg";
+import img7 from "../assets/tournament/31-LBJ06872.jpg";
+import img8 from "../assets/tournament/4-LBJ06808.jpg";
+import img9 from "../assets/tournament/2-LBJ06802.jpg";
+import img10 from "../assets/tournament/BB 3v3 Comp-16.jpg";
+import img11 from "../assets/tournament/BB 3v3 Comp-59.jpg";
+import img12 from "../assets/tournament/BB 3v3 Comp-40.jpg";
 
 import "./CircularGallery.css";
 
@@ -334,18 +346,18 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `/src/assets/tournament/100-LBJ07066.jpg`, text: "Shoot it" }, // jadon with balltime
-      { image: `/src/assets/tournament/128-LBJ07146.jpg`, text: "Put it up" }, // someone layup
-      { image: `/src/assets/tournament/123-LBJ07135.jpg`, text: "Shot" }, // daksh shot
-      { image: `/src/assets/tournament/124-LBJ07139.jpg`, text: "Emote on em" }, // manas freaky
-      { image: `/src/assets/tournament/133-LBJ07159.jpg`, text: "Win it ALL" }, // kelvin money spread
-      { image: `/src/assets/tournament/30-LBJ06866.jpg`, text: "Steal it" }, // manas intercept
-      { image: `/src/assets/tournament/31-LBJ06872.jpg`, text: "High stakes" }, // kelvin vs josh
-      { image: `/src/assets/tournament/4-LBJ06808.jpg`, text: "3 on 3" }, // benny layup
-      { image: `/src/assets/tournament/2-LBJ06802.jpg`, text: "Crowd is watching" }, // crowd
-      { image: `/src/assets/tournament/BB 3v3 Comp-16.jpg`, text: "Got what it takes?" }, // ishan verma staring at ball
-      { image: `/src/assets/tournament/BB 3v3 Comp-59.jpg`, text: "Money on the line" }, // Jon Vijay lay up
-      { image: `/src/assets/tournament/BB 3v3 Comp-40.jpg`, text: "Sign up now" }, // paarth dribbling
+      { image: img1, text: "Shoot it" }, // jadon with balltime
+      { image: img2, text: "Put it up" }, // someone layup
+      { image: img3, text: "Shot" }, // daksh shot
+      { image: img4, text: "Emote on em" }, // manas freaky
+      { image: img5, text: "Win it ALL" }, // kelvin money spread
+      { image: img6, text: "Steal it" }, // manas intercept
+      { image: img7, text: "High stakes" }, // kelvin vs josh
+      { image: img8, text: "3 on 3" }, // benny layup
+      { image: img9, text: "Crowd is watching" }, // crowd
+      { image: img10, text: "Got what it takes?" }, // ishan verma staring at ball
+      { image: img11, text: "Money on the line" }, // Jon Vijay lay up
+      { image: img12, text: "Sign up now" }, // paarth dribbling
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
