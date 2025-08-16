@@ -334,18 +334,18 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: `https://picsum.photos/seed/1/800/600?grayscale`, text: "Bridge" },
-      { image: `https://picsum.photos/seed/2/800/600?grayscale`, text: "Desk Setup" },
-      { image: `https://picsum.photos/seed/3/800/600?grayscale`, text: "Waterfall" },
-      { image: `https://picsum.photos/seed/4/800/600?grayscale`, text: "Strawberries" },
-      { image: `https://picsum.photos/seed/5/800/600?grayscale`, text: "Deep Diving" },
-      { image: `https://picsum.photos/seed/16/800/600?grayscale`, text: "Train Track" },
-      { image: `https://picsum.photos/seed/17/800/600?grayscale`, text: "Santorini" },
-      { image: `https://picsum.photos/seed/8/800/600?grayscale`, text: "Blurry Lights" },
-      { image: `https://picsum.photos/seed/9/800/600?grayscale`, text: "New York" },
-      { image: `https://picsum.photos/seed/10/800/600?grayscale`, text: "Good Boy" },
-      { image: `https://picsum.photos/seed/21/800/600?grayscale`, text: "Coastline" },
-      { image: `https://picsum.photos/seed/12/800/600?grayscale`, text: "Palm Trees" },
+      { image: `/src/assets/tournament/100-LBJ07066.jpg`, text: "Shoot it" }, // jadon with balltime
+      { image: `/src/assets/tournament/128-LBJ07146.jpg`, text: "Put it up" }, // someone layup
+      { image: `/src/assets/tournament/123-LBJ07135.jpg`, text: "Shot" }, // daksh shot
+      { image: `/src/assets/tournament/124-LBJ07139.jpg`, text: "Emote on em" }, // manas freaky
+      { image: `/src/assets/tournament/133-LBJ07159.jpg`, text: "Win it ALL" }, // kelvin money spread
+      { image: `/src/assets/tournament/30-LBJ06866.jpg`, text: "Steal it" }, // manas intercept
+      { image: `/src/assets/tournament/31-LBJ06872.jpg`, text: "High stakes" }, // kelvin vs josh
+      { image: `/src/assets/tournament/4-LBJ06808.jpg`, text: "3 on 3" }, // benny layup
+      { image: `/src/assets/tournament/2-LBJ06802.jpg`, text: "Crowd is watching" }, // crowd
+      { image: `/src/assets/tournament/BB 3v3 Comp-16.jpg`, text: "Got what it takes?" }, // ishan verma staring at ball
+      { image: `/src/assets/tournament/BB 3v3 Comp-59.jpg`, text: "Money on the line" }, // Jon Vijay lay up
+      { image: `/src/assets/tournament/BB 3v3 Comp-40.jpg`, text: "Sign up now" }, // paarth dribbling
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);
