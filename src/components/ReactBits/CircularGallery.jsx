@@ -12,6 +12,7 @@ import img9 from "../assets/tournament/2-LBJ06802.jpg";
 import img10 from "../assets/tournament/BB 3v3 Comp-16.jpg";
 import img11 from "../assets/tournament/BB 3v3 Comp-59.jpg";
 import img12 from "../assets/tournament/BB 3v3 Comp-40.jpg";
+//pls work
 
 import "./CircularGallery.css";
 
