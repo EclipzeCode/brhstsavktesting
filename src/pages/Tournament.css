@@ -70,6 +70,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   margin-top: 2rem;
+  align-items: start;
 }
 
 .registration-info-card,
@@ -482,16 +483,33 @@
 /* Typeform Embed */
 .typeform-container {
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   border-radius: 15px;
   overflow: hidden;
+  position: relative;
 }
 
 .typeform-container div[data-tf-live] {
-  width: 100%;
-  height: 500px;
+  width: 100% !important;
+  height: 600px !important;
   border: none;
   border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.typeform-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  border-radius: 15px;
+}
+
+.registration-form-card {
+  padding: 0 !important;
+  overflow: hidden;
+  min-height: 600px;
 }
 
 /* Responsive Design */
@@ -553,11 +571,19 @@
   }
   
   .typeform-container {
-    min-height: 400px;
+    min-height: 500px;
   }
   
   .typeform-container div[data-tf-live] {
-    height: 400px;
+    height: 500px !important;
+  }
+  
+  .registration-form-card {
+    min-height: 500px;
+  }
+  
+  .registration-layout {
+    grid-template-columns: 1fr;
   }
   
   .details-grid {
@@ -662,75 +688,15 @@
   }
   
   .typeform-container {
-    min-height: 350px;
+    min-height: 450px;
   }
   
   .typeform-container div[data-tf-live] {
-    height: 350px;
+    height: 450px !important;
   }
   
-  .detail-card {
-    padding: 1rem;
-  }
-  
-  .detail-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
-  
-  .prizes-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .prize-card {
-    padding: 1.5rem 1rem;
-  }
-  
-  .prize-icon {
-    font-size: 2rem;
-  }
-  
-  .prize-place {
-    font-size: 1rem;
-  }
-  
-  .prize-amount {
-    font-size: 1.8rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .tournament-stat-card {
-    padding: 1.5rem 1rem;
-  }
-  
-  .stat-number {
-    font-size: 2rem;
-  }
-  
-  .tournament-stat-card h3 {
-    font-size: 1.1rem;
-  }
-  
-  .tournament-stat-card p {
-    font-size: 0.85rem;
-  }
-  
-  .partners-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .partner-card {
-    padding: 1rem;
-  }
-  
-  .partner-name {
-    font-size: 0.9rem;
+  .registration-form-card {
+    min-height: 450px;
   }
 }
 
@@ -760,16 +726,33 @@
 /* Typeform Embed */
 .typeform-container {
   width: 100%;
-  min-height: 500px;
+  min-height: 600px;
   border-radius: 15px;
   overflow: hidden;
+  position: relative;
 }
 
 .typeform-container div[data-tf-live] {
-  width: 100%;
-  height: 500px;
+  width: 100% !important;
+  height: 600px !important;
   border: none;
   border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.typeform-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  border-radius: 15px;
+}
+
+.registration-form-card {
+  padding: 0 !important;
+  overflow: hidden;
+  min-height: 600px;
 }
 
 /* Responsive Design */
@@ -831,11 +814,19 @@
   }
   
   .typeform-container {
-    min-height: 400px;
+    min-height: 500px;
   }
   
   .typeform-container div[data-tf-live] {
-    height: 400px;
+    height: 500px !important;
+  }
+  
+  .registration-form-card {
+    min-height: 500px;
+  }
+  
+  .registration-layout {
+    grid-template-columns: 1fr;
   }
   
   .details-grid {
@@ -940,31 +931,40 @@
   }
   
   .typeform-container {
-    min-height: 350px;
+    min-height: 450px;
   }
   
   .typeform-container div[data-tf-live] {
-    height: 350px;
+    height: 450px !important;
   }
   
-  .detail-card {
-    padding: 1rem;
+  .registration-form-card {
+    min-height: 450px;
   }
-  
-  .detail-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
-  
-  .prizes-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .prize-card {
-    padding: 1.5rem 1rem;
-  }
+}
+
+.form-instructions ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.form-instructions li {
+  padding: 0.3rem 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.form-instructions li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8400ff;
+}
   
   .prize-icon {
     font-size: 2rem;
@@ -1010,4 +1010,3 @@
   .partner-name {
     font-size: 0.9rem;
   }
-}
