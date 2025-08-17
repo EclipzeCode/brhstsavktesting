@@ -512,6 +512,162 @@
   min-height: 600px;
 }
 
+/* Registration Button Section */
+.registration-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 2rem;
+  min-height: 400px;
+}
+
+.registration-call-to-action {
+  margin-bottom: 3rem;
+}
+
+.registration-call-to-action h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.registration-call-to-action p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Space Mono', 'Courier New', monospace;
+}
+
+.modern-registration-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(135deg, #FFD700, #ff6b00);
+  border-radius: 50px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-family: 'Space Mono', 'Courier New', monospace;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+  border: 2px solid transparent;
+  min-width: 280px;
+  justify-content: center;
+}
+
+.modern-registration-button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.modern-registration-button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.button-text {
+  z-index: 2;
+  position: relative;
+}
+
+.button-icon {
+  z-index: 2;
+  position: relative;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.modern-registration-button:hover .button-icon {
+  transform: translateX(3px);
+}
+
+.button-glow {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.modern-registration-button:hover .button-glow {
+  left: 100%;
+}
+
+.registration-note {
+  margin-top: 1.5rem;
+}
+
+.registration-note p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Space Mono', 'Courier New', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.registration-note p::before {
+  content: "ⓘ";
+  font-size: 0.8rem;
+}
+
+/* Enhanced Mobile Responsive Design */
+@media (max-width: 768px) {
+  .registration-button-container {
+    padding: 2rem 1rem;
+    min-height: 350px;
+  }
+  
+  .modern-registration-button {
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+    min-width: 240px;
+  }
+  
+  .registration-call-to-action h3 {
+    font-size: 1.5rem;
+  }
+  
+  .registration-call-to-action p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .registration-button-container {
+    padding: 1.5rem 0.5rem;
+    min-height: 300px;
+  }
+  
+  .modern-registration-button {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    min-width: 200px;
+  }
+  
+  .registration-call-to-action {
+    margin-bottom: 2rem;
+  }
+  
+  .registration-call-to-action h3 {
+    font-size: 1.3rem;
+  }
+  
+  .registration-call-to-action p {
+    font-size: 0.9rem;
+  }
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .registration-layout, .location-layout {
@@ -697,6 +853,51 @@
   
   .registration-form-card {
     min-height: 450px;
+  }
+  
+  .prize-icon {
+    font-size: 2rem;
+  }
+  
+  .prize-place {
+    font-size: 1rem;
+  }
+  
+  .prize-amount {
+    font-size: 1.8rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .tournament-stat-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .tournament-stat-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .tournament-stat-card p {
+    font-size: 0.85rem;
+  }
+  
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .partner-card {
+    padding: 1rem;
+  }
+  
+  .partner-name {
+    font-size: 0.9rem;
   }
 }
 
@@ -722,207 +923,6 @@
   left: 0;
   color: #8400ff;
 }
-
-/* Typeform Embed */
-.typeform-container {
-  width: 100%;
-  min-height: 600px;
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-}
-
-.typeform-container div[data-tf-live] {
-  width: 100% !important;
-  height: 600px !important;
-  border: none;
-  border-radius: 15px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.typeform-container iframe {
-  width: 100% !important;
-  height: 100% !important;
-  border: none !important;
-  border-radius: 15px;
-}
-
-.registration-form-card {
-  padding: 0 !important;
-  overflow: hidden;
-  min-height: 600px;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .registration-layout, .location-layout {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  
-  .details-grid {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
-  
-  .prizes-grid {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-  
-  .stats-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  .tournament-hero {
-    min-height: 70vh;
-    padding: 40px 0;
-  }
-  
-  .hero-badges {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-  }
-  
-  .hero-badge {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.8rem;
-  }
-  
-  .section-title {
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-  }
-  
-  .registration-info-card, .registration-form-card,
-  .location-info-card, .map-card {
-    padding: 2rem;
-  }
-  
-  .registration-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  
-  .registration-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-  }
-  
-  .typeform-container {
-    min-height: 500px;
-  }
-  
-  .typeform-container div[data-tf-live] {
-    height: 500px !important;
-  }
-  
-  .registration-form-card {
-    min-height: 500px;
-  }
-  
-  .registration-layout {
-    grid-template-columns: 1fr;
-  }
-  
-  .details-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .detail-card {
-    padding: 1.5rem;
-  }
-  
-  .detail-icon {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-  
-  .detail-header h3 {
-    font-size: 1.1rem;
-  }
-  
-  .prizes-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  
-  .prize-card {
-    padding: 2rem 1.5rem;
-  }
-  
-  .prize-icon {
-    font-size: 2.5rem;
-  }
-  
-  .prize-amount {
-    font-size: 2rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  
-  .tournament-stat-card {
-    padding: 2rem 1.5rem;
-  }
-  
-  .stat-number {
-    font-size: 2.5rem;
-  }
-  
-  .partners-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1rem;
-  }
-  
-  .partner-card {
-    padding: 1.5rem;
-  }
-  
-  .partner-name {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .tournament-hero {
-    min-height: 60vh;
-    padding: 30px 0;
-  }
-  
-  .tournament-content {
-    padding: 0 1rem;
-  }
-  
-  .hero-badge {
-    padding: 0.5rem 1rem;
-    font-size: 0.7rem;
-  }
-  
-  .registration-info-card, .registration-form-card,
-  .location-info-card, .map-card {
-    padding: 1.5rem;
-  }
-  
-  .registration-requirements h4 {
-    font-size: 1rem;
-  }
-  
-  .registration-requirements li {
-    font-size: 0.8rem;
-  }
-  
-  .registration-deadline {
-    padding: 1rem;
-  }
   
   .deadline-icon {
     width: 35px;
@@ -941,7 +941,7 @@
   .registration-form-card {
     min-height: 450px;
   }
-}
+
 
 .form-instructions ul {
   list-style: none;

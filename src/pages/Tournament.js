@@ -120,7 +120,7 @@ const Tournament = () => {
         <div className="container">
           <h2 className="section-title">
             <GradientText colors={["#FFD700", "#8400ff"]}>
-              Tournament Registration
+              Tournament Registration Here
             </GradientText>
           </h2>
           
@@ -159,8 +159,24 @@ const Tournament = () => {
             </SpotlightCard>
 
             <SpotlightCard className="registration-form-card" spotlightColor="rgba(132, 0, 255, 0.2)">
-              <div className="typeform-container">
-                <div data-tf-live="01K2QPRD1FJZG63BK7PQBDWMKR"></div>
+              <div className="registration-button-container">
+                <div className="registration-call-to-action">
+                  <h3>Join the Competition</h3>
+                  <p>Click below to complete your team registration</p>
+                </div>
+                <a 
+                  href="https://form.typeform.com/to/DGetFrgd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="modern-registration-button"
+                >
+                  <span className="button-text">Sign Up Here</span>
+                  <div className="button-glow"></div>
+                  <FiExternalLink className="button-icon" />
+                </a>
+                <div className="registration-note">
+                  <p>Opens in a new tab</p>
+                </div>
               </div>
             </SpotlightCard>
           </div>
