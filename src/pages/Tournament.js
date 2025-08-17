@@ -114,11 +114,7 @@ const Tournament = () => {
         </div>
       </section>
 
-      <section className="gallery-section">
-        <div style={{ height: '600px', position: 'relative' }}>
-  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}/>
-</div>
-      </section>
+
 
       <section className="registration-section">
         <div className="container">
@@ -170,7 +166,11 @@ const Tournament = () => {
           </div>
         </div>
       </section>
-
+      <section className="gallery-section">
+        <div style={{ height: '600px', position: 'relative' }}>
+  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} scrollEase={0.02}/>
+</div>
+      </section>
       <section className="event-details-section">
         <div className="container">
           <h2 className="section-title">
