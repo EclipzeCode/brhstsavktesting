@@ -901,6 +901,43 @@
   }
 }
 
+.fair-play-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(34, 197, 94, 0.1);
+  border-radius: 15px;
+  border-left: 4px solid #22c55e;
+  margin-top: 1.5rem;
+}
+
+.fair-play-notice .notice-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #22c55e;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: black;
+  flex-shrink: 0;
+}
+
+.fair-play-notice strong {
+  color: #22c55e;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.fair-play-notice p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
 .form-instructions ul {
   list-style: none;
   padding: 0;
@@ -923,49 +960,7 @@
   left: 0;
   color: #8400ff;
 }
-  
-  .deadline-icon {
-    width: 35px;
-    height: 35px;
-    font-size: 1rem;
-  }
-  
-  .typeform-container {
-    min-height: 450px;
-  }
-  
-  .typeform-container div[data-tf-live] {
-    height: 450px !important;
-  }
-  
-  .registration-form-card {
-    min-height: 450px;
-  }
-
-
-.form-instructions ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-.form-instructions li {
-  padding: 0.3rem 0;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.form-instructions li:before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: #8400ff;
-}
-  
+ 
   .prize-icon {
     font-size: 2rem;
   }

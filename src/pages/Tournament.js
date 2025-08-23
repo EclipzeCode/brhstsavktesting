@@ -6,7 +6,7 @@ import CountUp from '../components/ReactBits/CountUp';
 import Particles from '../components/ReactBits/Particles';
 import DarkVeil from '../components/ReactBits/DarkVeil';
 import CircularGallery from '../components/ReactBits/CircularGallery';
-import { FiExternalLink, FiMapPin, FiCalendar, FiUsers, FiFileText, FiDollarSign, FiTruck, FiClock } from 'react-icons/fi';
+import { FiExternalLink, FiMapPin, FiCalendar, FiUsers, FiFileText, FiDollarSign, FiTruck, FiClock, FiCheckCircle } from 'react-icons/fi';
 import './Tournament.css';
 
 const Tournament = () => {
@@ -42,25 +42,29 @@ const Tournament = () => {
       icon: <FiCalendar />,
       title: "Date & Time",
       info: "October 3, 2025",
-      description: "Mark your calendars for this exciting competition"
+      description: "Mark your calendars for this exciting competition",
+      image: process.env.PUBLIC_URL + "/assets/tournament/calendar.jpg"
     },
     {
       icon: <FiMapPin />,
       title: "Location",
       info: "Bridgewater-Raritan High School",
-      description: "Large Gym, 600 Garretson Road, Bridgewater, NJ"
+      description: "Large Gym, 600 Garretson Road, Bridgewater, NJ",
+      image: process.env.PUBLIC_URL + "/assets/tournament/location.jpg"
     },
     {
       icon: <FiUsers />,
       title: "Eligibility",
       info: "High School & Middle School",
-      description: "No college students allowed"
+      description: "No college students allowed. Only 1 varsity player per team allowed.",
+      image: process.env.PUBLIC_URL + "/assets/tournament/team.jpg"
     },
     {
       icon: <FiTruck />,
       title: "Food & Refreshments",
       info: "Kona Ice & Rita's Italian Ice",
-      description: "Food trucks available on-site"
+      description: "Food trucks available on-site",
+      image: process.env.PUBLIC_URL + "/assets/tournament/food.jpg"
     }
   ];
 
@@ -141,6 +145,7 @@ const Tournament = () => {
                 <ul>
                   <li>Teams of exactly 3 members</li>
                   <li>High school or middle school students only</li>
+                  <li>Only 1 varsity player per team allowed</li>
                   <li>All team members from NJ schools</li>
                   <li>$10 registration fee per person</li>
                   <li>Limited to 32 teams - first come, first served</li>
@@ -154,6 +159,16 @@ const Tournament = () => {
                 <div>
                   <strong>Registration Deadline:</strong>
                   <p>September 20, 2025 (or when 32 teams are reached)</p>
+                </div>
+              </div>
+
+              <div className="fair-play-notice">
+                <div className="notice-icon">
+                  <FiCheckCircle />
+                </div>
+                <div>
+                  <strong>Fair Competition:</strong>
+                  <p>All skill levels are welcome! Matches will be organized to ensure every team gets a fair chance to compete and succeed.</p>
                 </div>
               </div>
             </SpotlightCard>
